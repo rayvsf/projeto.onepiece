@@ -1,0 +1,73 @@
+@media (max-width: 769px) {
+    main::after {
+        background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0) 65%) no-repeat;
+        width: 100vw; 
+    }
+        
+    main .personagem .imagem {
+        height: 85%;
+    }
+
+    .conteudo {
+        justify-content: flex-end; /*empurra o conteudo para baixo*/
+        left: 0;
+        top: -20%; 
+        max-width: 100vw;
+        padding: 30px; /* espaçamento entre o conteúdo e as bordas do conteudo*/
+
+
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 36px; /* diminui o nome do personagem */
+    }
+    
+    .conteudo .descricao {
+        max-width: 500px; /* diminui a largura do conteudo */
+    }
+
+    .botoes {
+        flex-direction: row; /* deixar os icons em linha */
+        align-items: flex-end; /*deixa os icons em baixo */
+        width: 100%;
+        padding: 30px; /* espaçamento entre as bordas */
+
+    }
+    
+    .botoes .botao img {
+        max-width: 60px; /*diminui os icons */
+    }
+ 
+}
+
+@media (max-width: 425px) {
+    main .personagem .imagem{
+        height: auto; /* altura automática(deixa a imagem pra cima)*/
+    }
+
+    .conteudo .logo {
+        width: 170px;
+        height: 75px;
+
+    }
+
+    .conteudo {
+        top: -30%;
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 24px;
+
+    }
+
+    .botoes {
+        padding: 20px;
+        top: -20;
+    }
+
+    .botoes .botao img {
+        max-width: 50px; /*diminui as imagens dos icons no celular */
+    }
+    
+     
+}
